@@ -19,7 +19,8 @@ function setup() {
   createCanvas(displayWidth, displayHeight);
 //  img = createImg('https://static.wikia.nocookie.net/jerma-lore/images/e/e3/JermaSus.jpg/revision/latest?cb=20201206225609');
   capture = createCapture(VIDEO);
-  //capture.hide();
+  capture.size(displayWidth, displayHeight);
+  capture.hide();
   
   input = createInput();
   input.position(displayWidth/2, displayHeight/2);
