@@ -36,6 +36,7 @@ function setup() {
 function greet(){
   const name = input.value();
  // tF = true;
+  let tF = true;
   tF = checkImage(name);
   console.log("TF: " + tF);
   if(tF == true){
@@ -49,23 +50,9 @@ function greet(){
 
 }
 function checkImage(url) {
-  var request = new XMLHttpRequest();
-  request.open("GET", url, true);
-  request.send();
-  request.return = true;
-  request.onload = function() {
-    status = request.status;
-    if (request.status == 200) //if(statusText == OK)
-    {
-      console.log("image exists");
-      request.return = true;
-    } else {
-      console.log("image doesn't exist");
-      request.return = false;
-    }
-  }
-  console.log("request" + request.return);
-  return request.return;
+  var img = new Image();
+  img.src = url;
+  return img.complete && img.naturalWidth !== 0;
 }
 
 
