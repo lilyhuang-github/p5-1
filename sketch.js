@@ -60,10 +60,12 @@ function hide(){
   greeting.hide();
   button.hide();
   input.hide();
+  hidder.html("Show");
   hidden = 1;
   }
   else{
      show();
+    hidder.html("Hide");
      hidden = 0;
   }
 }
