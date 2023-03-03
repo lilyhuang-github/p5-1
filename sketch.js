@@ -123,7 +123,9 @@ function failure(){
    img = loadImage('TheThing.webp');
     console.log("Bad image file path");
 }
-
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 function draw() {
   background(255);
  // ellipse(50, 60, 15, 15);
