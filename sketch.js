@@ -1,7 +1,9 @@
   let img;
+let picDefault = 'https://static-cdn.jtvnw.net/emoticons/v2/emotesv2_e52499ea14e74e7890b1699ffbaec26e/default/dark/1.0';
  let hidden = 0;
 function preload() {
-    img = loadImage('TheThing.webp');
+//    img = loadImage('TheThing.webp');
+  img = loadImage(picDefault);
 //    img = loadImage('https://preview.redd.it/i-know-he-nervous-af-v0-xmo07xj81px81.jpg?width=640&crop=smart&auto=webp&s=9b8a91512d601dc6035e527449c330a63d5b1e7e');
 }
 function setup() {
@@ -81,7 +83,7 @@ function greet(){
   }
   else{
     console.log("Anti loading");
-    img = loadImage('TheThing.webp')
+    img = loadImage(picDefault)
   }
 
 }
