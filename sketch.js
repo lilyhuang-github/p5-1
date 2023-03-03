@@ -5,7 +5,7 @@ function preload() {
 //    img = loadImage('https://preview.redd.it/i-know-he-nervous-af-v0-xmo07xj81px81.jpg?width=640&crop=smart&auto=webp&s=9b8a91512d601dc6035e527449c330a63d5b1e7e');
 }
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(displayWidth, displayHeight);
 //  img = createImg('https://static.wikia.nocookie.net/jerma-lore/images/e/e3/JermaSus.jpg/revision/latest?cb=20201206225609');
   capture = createCapture(VIDEO);
   capture.hide();
