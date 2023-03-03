@@ -35,12 +35,15 @@ function setup() {
 }
 function greet(){
   const name = input.value();
-  
-  tF = checkImage(url);
-  if(tF === true){
+ // tF = true;
+  tF = checkImage(name);
+  console.log("TF: " + tF);
+  if(tF == true){
+    console.log("Load");
     img = loadImage(name);
   }
   else{
+    console.log("Anti loading");
     img = loadImage('TheThing.webp')
   }
 
@@ -49,18 +52,48 @@ function checkImage(url) {
   var request = new XMLHttpRequest();
   request.open("GET", url, true);
   request.send();
+  request.return = true;
   request.onload = function() {
     status = request.status;
     if (request.status == 200) //if(statusText == OK)
     {
       console.log("image exists");
-      return true;
+      request.return = true;
     } else {
       console.log("image doesn't exist");
-      return false;
+      request.return = false;
     }
   }
+  console.log("request" + request.return);
+  return request.return;
 }
+
+
+// function checkImage(url) {
+//   var request = new XMLHttpRequest();
+//   let returnVal;
+//   request.open("GET", url, true);
+//   request.send();
+//   request.onload = function() {
+//     status = request.status;
+//     if (request.status == 200) //if(statusText == OK)
+//     {
+//       console.log("Status " + request.status);
+//       returnVal = true;
+//       return true;
+//     } 
+//     else {
+//       console.log("Status " + request.status);
+//       returnVal = false;
+//       return false;
+//     }
+//   }
+//   returnVal = request.onload();
+
+//   console.log("return val" + returnVal);
+//   //return true;
+//   return returnVal;
+// }
 function failure(){
    img = loadImage('TheThing.webp');
     console.log("Bad image file path");
