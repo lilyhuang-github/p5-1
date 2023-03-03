@@ -23,14 +23,17 @@ function setup() {
   capture.hide();
   
   input = createInput();
-  input.position(displayWidth/2, displayHeight/2);
+  // input.position(displayWidth/2, displayHeight/2);
+  input.position(0, 50);
   button = createButton('submit');
-  button.position(displayWidth/2+150, displayHeight/2);
+  // button.position(displayWidth/2+150, displayHeight/2);
+  button.position(150, 50);
   button.mousePressed(greet);
 // textAlign(CENTER);
 //   textSize(50);
   greeting = createElement('h2', 'Custom image url: ');
-  greeting.position(displayWidth/2, displayHeight/2-125);
+  greeting.position(0, 0)
+  // greeting.position(displayWidth/2, displayHeight/2-125);
   
 //  img = loadImage(capture);
 }
