@@ -1,5 +1,5 @@
-let img;
-
+  let img;
+ let hidden = 0;
 function preload() {
     img = loadImage('TheThing.webp');
 //    img = loadImage('https://preview.redd.it/i-know-he-nervous-af-v0-xmo07xj81px81.jpg?width=640&crop=smart&auto=webp&s=9b8a91512d601dc6035e527449c330a63d5b1e7e');
@@ -33,9 +33,39 @@ function setup() {
 //   textSize(50);
   greeting = createElement('h2', 'Custom image url: ');
   greeting.position(0, 0)
+  
+ 
+  hidder = createButton('Hide');
+  hidder.position(0, 0);
+  hidder.mousePressed(hide);
+  // if(hidden == 0){
+  //   hidder.mousePressed(hide);
+  // }
+  // else if (hidden == 1){
+  //   console.log("show)")
+  //   hidder.mousePressed(show);
+  // }
   // greeting.position(displayWidth/2, displayHeight/2-125);
   
 //  img = loadImage(capture);
+}
+function show(){
+  greeting.show();
+  button.show();
+  input.show();
+  hidden = 0;
+}
+function hide(){
+  if(hidden == 0){
+  greeting.hide();
+  button.hide();
+  input.hide();
+  hidden = 1;
+  }
+  else{
+     show();
+     hidden = 0;
+  }
 }
 function greet(){
   const name = input.value();
