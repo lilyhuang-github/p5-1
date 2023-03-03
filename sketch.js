@@ -124,7 +124,7 @@ function failure(){
     console.log("Bad image file path");
 }
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(displayWidth, displayHeight);
 }
 function draw() {
   background(255);
