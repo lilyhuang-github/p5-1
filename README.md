@@ -11,5 +11,6 @@ JERMA:::
 ![punch-jerma](https://user-images.githubusercontent.com/112970249/222853461-2ec6f8d7-75ff-426a-82e9-48a765adc233.gif)
 
 
-![jerma-burger](https://user-images.githubusercontent.com/112970249/222853547-c693c4cb-1f20-4b3b-9462-c5cd2e8e0567.gif)
+
 ![d6f](https://user-images.githubusercontent.com/112970249/222853555-05b6afba-0304-45f7-98ff-7fdf27084bf9.jpg)
+![jerma-burger](https://user-images.githubusercontent.com/112970249/222853547-c693c4cb-1f20-4b3b-9462-c5cd2e8e0567.gif)
