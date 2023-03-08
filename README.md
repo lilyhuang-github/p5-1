@@ -1,4 +1,6 @@
 # p5-v1-THEJERMACAM
+This is made by me to understand javascript better and mess around with P5
+
 Website webcam using P5 to make the webcam image made out of an image, by default it's jerma.
  https://lilyhuang-github.github.io/p5-v1-THEJERMACAM/
 
